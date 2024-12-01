@@ -7,7 +7,7 @@
 
 This site showcases my work as a Software Engineer, featuring my projects and accomplishments. Here, you’ll find examples of my work that reflect my skills and creativity. I hope my work resonates with you.
 
-  <a href=""><strong>➥ Live Demo</strong></a>
+  <a href="https://avantika-rawat.netlify.app"><strong>➥ Live Demo</strong></a>
 
 </div>
 
