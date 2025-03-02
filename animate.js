@@ -1,20 +1,19 @@
-// navbar animation
-
+// Navbar animation
 gsap.from(".head", {
   y: -80,
-  duration: 1,
-  delay: 0.5,
+  duration: 1.5,
+  delay: 0.6,
+  ease: "power4.out",
 });
 
-//cards animation
-
+// Cards animation
 var tline = gsap.timeline({
   scrollTrigger: {
     trigger: ".skills",
     start: "top 70%",
-    end: " top 80%",
-    scrub: 0.6,
-    stagger: 1.6,
+    end: "top 80%",
+    scrub: 0.8,
+    stagger: 1.2,
     ease: "power3.out",
   },
 });
@@ -22,24 +21,25 @@ var tline = gsap.timeline({
 tline.from(".skills .section-skill-title", {
   x: -180,
   opacity: 0,
-  duration: 1.5,
+  duration: 1.8,
+  ease: "power3.out",
 });
 
 tline.from(".skills .cards", {
   y: 180,
   opacity: 0,
-  duration: 2,
-  delay: 1.5,
+  duration: 2.2,
+  delay: 1.8,
+  ease: "power3.out",
 });
 
-//portfolio animation
-
+// Portfolio animation
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".Portfolio",
     start: "top 70%",
     end: "top 20%",
-    scrub: 0.6,
+    scrub: 0.8,
     ease: "power3.out",
   },
 });
@@ -47,24 +47,23 @@ var tl = gsap.timeline({
 tl.from(".Portfolio .section-pfolio-title", {
   x: -180,
   opacity: 0,
-  duration: 2,
+  ease: "power3.out",
 });
 
 tl.from(".Portfolio .item", {
   y: 180,
   opacity: 0,
-  duration: 1.5,
-  stagger: 0.2,
+  stagger: 0.3,
+  ease: "power3.out",
 });
 
-//cert animation
+// Certificates animation
 var tlCert = gsap.timeline({
   scrollTrigger: {
     trigger: ".certificates",
     start: "top 90%",
     end: "top 100%",
-    scrub: 0.6,
-
+    scrub: 0.7,
     ease: "power3.out",
   },
 });
@@ -72,5 +71,6 @@ var tlCert = gsap.timeline({
 tlCert.from(".cert-head h2", {
   y: 180,
   opacity: 0,
-  duration: 2,
+  duration: 2.5,
+  ease: "power3.out",
 });
