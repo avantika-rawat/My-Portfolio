@@ -380,13 +380,6 @@ main .skills .cards {
 }
 
 
-.skills .cards :hover {
-  background-color: #2a2929;
-  color: #fff;
-}
-
-
-
 .skills .title-wrapper .section-skill-title {
   margin-bottom: 12px;
   font-size: 50px;
