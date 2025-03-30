@@ -605,6 +605,100 @@ main .Portfolio .port-head .section-pfolio-title {
   }
 }
 
+/* contact */
+
+.contact {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+
+
+}
+
+.contact .getinTouch {
+  width: 600px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .getinTouch h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  transform: scaleX(1.4);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.contact .getinTouch h1 span {
+  margin-left: 50px;
+}
+
+
+.contact-form {
+  width: 650px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  color: white;
+  height: 40px;
+}
+
+
+.btn {
+  background: none;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+}
+
+textarea {
+  resize: none;
+  min-height: 40px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* .certificates */
 
 
