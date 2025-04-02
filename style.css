@@ -48,8 +48,10 @@ body {
 
   .head a h2 {
     font-size: 30px;
-    margin-left: 0px;
-
+    margin-left: 27px;
+    position: absolute;
+    margin-top: -18px;
+    left: 0;
   }
 }
 
@@ -412,7 +414,7 @@ main .skills .cards {
     width: 80%;
     margin-bottom: 20px;
     padding: 30px;
-    height: auto;
+    height: 250px;
   }
 
   .skills .cards .card-1:hover,
@@ -699,6 +701,32 @@ textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+
+  .contact .getinTouch h1 {
+    font-size: 50px;
+    transform: scaleX(1);
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .form-item {
+    width: 100%;
+  }
+}
+
 /* .certificates */
 
 
@@ -825,5 +853,12 @@ main .footer .my-foot ul li .footer-link {
   main .footer .my-foot ul li .footer-link {
     font-size: 14px;
     color: #868A9C;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #preloader {
+    font-size: 16px;
   }
 }
