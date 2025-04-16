@@ -840,3 +840,61 @@ main .footer .my-foot ul li .footer-link {
     font-size: 16px;
   }
 }
+
+
+.skills-sec {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1f1c2c, #33353e);
+  /* deep gradient bg */
+  min-height: 400px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #fff;
+}
+
+.tech-stack-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  width: 120px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.tech-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
