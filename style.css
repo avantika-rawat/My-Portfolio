@@ -302,91 +302,64 @@ main .hero-container .h1-hero-title {
   margin-left: 5px;
 }
 
-main .skills .title-wrapper .h2 section-skill-title {
-  left: 100px;
+main .skills .title-wrapper .section-skill-title {
   color: rgb(68, 68, 73);
-
-}
-
-main .skills .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-.skills .cards .card-1 {
-  background-color: #fff;
-  color: #1b1b1b;
-  width: 300px;
-  height: 300px;
-  margin-right: 12px;
-  padding: 50px;
-  transition: background-color 0.5s ease-in-out;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 1px #2a2929;
-  border-radius: 4rem 0;
-  font-weight: 700;
-
-}
-
-.skills .cards .card-1 ul li {
-  list-style: none;
-  line-height: 22px;
-
-}
-
-.skills .cards .card-2 {
-  background-color: #fff;
-  color: #1b1b1b;
-  width: 300px;
-  height: 300px;
-  margin-right: 12px;
-  padding: 50px;
-  transition: background-color 0.5s ease-in-out;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 1px #2a2929;
-  border-radius: 4rem 0;
-  font-weight: 700;
-}
-
-.skills .cards .card-3 {
-  background-color: #fff;
-  color: #1b1b1b;
-  width: 300px;
-  height: 300px;
-  margin-right: 12px;
-  padding: 50px;
-  transition: background-color 0.5s ease-in-out;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 1px #2a2929;
-  border-radius: 4rem 0;
-  font-weight: 700;
-
-}
-
-.skills .cards .card-2 ul li {
-  list-style: none;
-  line-height: 22px;
-
-}
-
-.skills .cards .card-3 ul li {
-  list-style: none;
-  line-height: 22px;
-
-}
-
-
-.skills .title-wrapper .section-skill-title {
-  margin-bottom: 12px;
   font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
   margin-left: 30px;
+}
 
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Centering the content of each card */
+  transition: transform 0.3s ease-in-out;
+  /* Added transition for hover effect */
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content .logo {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.card-content h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 
@@ -438,10 +411,12 @@ main .skills .cards {
 
 
 main .Portfolio .port-head .section-pfolio-title {
+  color: rgb(68, 68, 73);
   font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
   margin-left: 150px;
-  transform: skewX(1.4);
-
 }
 
 
@@ -739,9 +714,12 @@ main .certificates {
 }
 
 main .certificates .cert-head h2 {
+  color: rgb(68, 68, 73);
   font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
   margin-left: 150px;
-  margin-bottom: 20px;
 }
 
 .certificates .certificates-container {
