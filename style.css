@@ -362,42 +362,63 @@ main .skills .title-wrapper .section-skill-title {
   margin-bottom: 20px;
 }
 
-
-@media (max-width: 767px) {
-
+/* Responsive for tablets and below */
+@media (max-width: 992px) {
   .skills {
-    margin: 40px 20px;
+    margin: 80px 40px;
   }
 
-  .skills .title-wrapper .section-skill-title {
-    font-size: 30px;
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  main .skills .title-wrapper .section-skill-title {
+    font-size: 40px;
     margin-left: 0;
-    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .skills .cards {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .skills .cards .card-1,
-  .skills .cards .card-2,
-  .skills .cards .card-3 {
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 30px;
-    height: 250px;
-  }
-
-  .skills .cards .card-1:hover,
-  .skills .cards .card-2:hover,
-  .skills .cards .card-3:hover {
-    background-color: #2a2929;
-    color: #fff;
-    box-shadow: none;
+  .skills .title-wrapper {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
   }
 }
+
+/* Responsive for mobile screens */
+@media (max-width: 600px) {
+  .skills {
+    margin: 60px 20px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  main .skills .title-wrapper .section-skill-title {
+    font-size: 32px;
+  }
+
+  .card-content h2 {
+    font-size: 1.5em;
+  }
+
+  .card-content p {
+    font-size: 0.95em;
+  }
+}
+
 
 /* .Portfolio */
 
@@ -802,6 +823,13 @@ main .footer .my-foot ul li .footer-link {
   font-weight: 400;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
 @media (max-width: 767px) {
 
   main .footer .my-foot {
@@ -864,7 +892,7 @@ main .footer .my-foot ul li .footer-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .tech-card {
