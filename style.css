@@ -169,19 +169,19 @@ main .hero-container .hero-text .hero-subtitle {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
-main .hero-container .hero-text button {
+.hire-me-btn {
   height: 40px;
   width: 20%;
   margin-top: 70px;
   margin-left: 150px;
-  background-color: #1b1b1b;
+  background: linear-gradient(135deg, #1f1c2c, #33353e);
   border: none;
-  color: #8c8c8c;
+  color: #fff;
   cursor: pointer;
 }
 
 
-main .hero-container .hero-text button:hover {
+.hire-me-btn:hover {
   transform: scale(1.1);
   transition: 1s;
   border: 2px solid #fff;
@@ -271,7 +271,7 @@ main .hero-container .hero-text .h1-hero-title {
     margin-top: 30px;
     margin-left: 0;
     background-color: #1b1b1b;
-    color: #8c8c8c;
+    color: #ffffff;
     font-size: 16px;
   }
 
@@ -425,6 +425,7 @@ main .skills .title-wrapper .section-skill-title {
 .Portfolio {
   margin-bottom: 80px;
   height: 1000px;
+
 
 
 }
