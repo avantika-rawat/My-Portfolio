@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #141414;
   color: #ddd;
@@ -85,21 +89,24 @@ a {
   color: #ddd;
   background-color: #1b1b1b;
   display: none;
+  margin-left: 1rem;
 }
 
 
 .dropdown-menu {
   position: absolute;
+  right: 3.9rem;
   top: 60px;
+  max-width: 90vw;
   background-color: #818182;
   height: 211px;
   width: 150px;
-  right: 1.5rem;
   backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
   margin: 0;
   display: none;
+
 
 }
 
@@ -445,14 +452,10 @@ main .skills .title-wrapper .section-skill-title {
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-  /* auto-fit adjusts columns */
   gap: 30px;
-  /* small gap */
   padding: 20px 40px;
   max-width: 1000px;
-  /* optional max width */
   margin: auto;
-  /* center container */
 }
 
 .item {
@@ -466,7 +469,6 @@ main .skills .title-wrapper .section-skill-title {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  /* Makes container perfectly square */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -479,13 +481,11 @@ main .skills .title-wrapper .section-skill-title {
 
 .item img {
   position: absolute;
-  /* absolutely fill container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* cover container without distortion */
   border-radius: 16px;
   z-index: 1;
 }
@@ -533,6 +533,7 @@ main .skills .title-wrapper .section-skill-title {
 .card-info {
   text-align: justify;
   margin-top: 10px;
+
 }
 
 
@@ -544,6 +545,7 @@ main .skills .title-wrapper .section-skill-title {
   .Portfolio {
     margin-bottom: 40px;
     height: auto;
+    padding: 0 10px;
   }
 
   main .Portfolio .port-head .section-pfolio-title {
@@ -553,11 +555,15 @@ main .skills .title-wrapper .section-skill-title {
     transform: skewX(0.8);
   }
 
+  .project-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
   .Portfolio .carousel .project-container .item {
     background-color: #1b1b1b;
     overflow: hidden;
     height: 250px;
-    width: 100%;
     position: relative;
     margin-bottom: 20px;
   }
@@ -568,7 +574,7 @@ main .skills .title-wrapper .section-skill-title {
   }
 
   /* Card Body */
-  .Portfolio .carousel .project-container.item .card-body {
+  .Portfolio .carousel .project-container .item .card-body {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -580,13 +586,17 @@ main .skills .title-wrapper .section-skill-title {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 1s;
+    padding: 20px;
+    /* ✅ Added padding here */
+    gap: 10px;
+    /* ✅ Optional: adds space between children */
+
+    transition: right 1s;
   }
 
 
   .Portfolio .carousel .project-container .item .card-body .card-title {
     font-size: 20px;
-
   }
 
   /* Card Info */
@@ -594,14 +604,14 @@ main .skills .title-wrapper .section-skill-title {
     font-size: 14px;
     line-height: 20px;
     margin: 20px 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px;
   }
 
   .Portfolio .carousel .project-container .item .card-body .card-btn {
     font-size: 14px;
     width: 100px;
-    padding: 8px 16px;
+    padding: 8px 20px;
+    margin: auto;
   }
 
   .Portfolio .carousel .project-container .item .card-body .card-btn:hover {
