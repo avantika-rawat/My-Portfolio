@@ -89,13 +89,13 @@ a {
   color: #ddd;
   background-color: #1b1b1b;
   display: none;
-  margin-left: 1rem;
+  margin-left: 10rem;
 }
 
 
 .dropdown-menu {
   position: absolute;
-  right: 3.9rem;
+  right: 5rem;
   top: 60px;
   max-width: 90vw;
   background-color: #818182;
@@ -587,11 +587,8 @@ main .skills .title-wrapper .section-skill-title {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* ✅ Added padding here */
     gap: 10px;
-    /* ✅ Optional: adds space between children */
 
-    transition: right 1s;
   }
 
 
