@@ -296,6 +296,98 @@ main .hero-container .h1-hero-title {
   z-index: -1;
 }
 
+.details-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0 6%;
+  box-sizing: border-box;
+}
+
+/* Left text */
+.details-text {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 350px;
+}
+
+.details-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+/* Center portrait image */
+.details-center-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details-center-img img {
+  height: 70vh;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Right landscape image as link */
+.details-right-link {
+  position: absolute;
+  right: 6%;
+  bottom: 15%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Image inside the link */
+.details-right-link img {
+  width: 320px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Hover text overlay */
+.details-right-link .hover-text {
+  position: absolute;
+  bottom: -30px;
+  /* appears slightly below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show text on hover */
+.details-right-link:hover .hover-text {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Icon style */
+.details-right-link .hover-text .icon {
+  font-size: 1rem;
+}
 
 /* skills */
 
